@@ -1,0 +1,4 @@
+pt/tecnico/distledger/userclient/CommandParser.class
+pt/tecnico/distledger/userclient/UserClientMain.class
+pt/tecnico/distledger/userclient/exceptions/NoServersFoundException.class
+pt/tecnico/distledger/userclient/grpc/UserService.class

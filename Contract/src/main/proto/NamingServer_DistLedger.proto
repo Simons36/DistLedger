@@ -1,0 +1,30 @@
+syntax = "proto3";
+package pt.ulisboa.tecnico.distledger.contract.namingserverdistledger;
+
+message RegisterRequest{
+  string service = 1;
+  string qualifier = 2;
+  string target = 3;
+}
+
+
+
+message RegisterResponse{
+
+}
+
+message DeleteRequest{
+  string service = 1;
+  string target = 2;
+}
+
+message DeleteResponse{
+
+}
+
+
+service DistLedgerNamingServerService {
+  rpc Register(RegisterRequest) returns (RegisterResponse);
+  rpc Delete(DeleteRequest) returns (DeleteResponse);
+}
+  

@@ -1,0 +1,18 @@
+syntax = "proto3";
+package pt.ulisboa.tecnico.distledger.contract.namingservercommon;
+
+message LookupRequest{
+    string service = 1;
+    string qualifier = 2;
+}
+
+
+message LookupResponse{
+    repeated string serverAddress = 1;
+}
+
+
+
+service NamingServerCommonService{
+    rpc Lookup(LookupRequest) returns (LookupResponse);
+}
